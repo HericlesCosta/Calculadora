@@ -4,7 +4,7 @@
 
 Projeto contruído a partir do layout da calculadora do iphone, tendo como intuito principal, o aprendizado.
 
-[🔗 Clique aqui para acessar](https://github.com/HericlesCosta/Calculadora.git/)
+[🔗 Clique aqui para acessar](https://hericlescosta.github.io/Calculadora/)
 
 
 ## 🛠 Tecnologias utilizadas
