@@ -30,15 +30,27 @@ for (let i = 0; i < numbers.length; i++){
 function getFirstValue(el) {
     result.innerHTML = '';
     firstValue += el;
-    result.innerHTML = firstValue;
-    firstValue = +firstValue;
+    if (firstValue.length > 8){
+        firstValue = 0;
+        resultValue = firstValue;
+        result.innerHTML = resultValue;
+    } else {
+        result.innerHTML = firstValue;
+        firstValue = +firstValue;
+    }
 }
 
 function getSecondValue(el) {
     if (firstValue != '' && sign != ''){
         secondValue += el;
-        result.innerHTML = secondValue;
-        secondValue = +secondValue;
+        if (secondValue.length > 8){
+            secondValue = 0;
+            resultValue = secondValue;
+            result.innerHTML = resultValue;
+        } else {
+            result.innerHTML = secondValue;
+            secondValue = +secondValue;
+        }
     }
 }
 
@@ -94,9 +106,10 @@ equal.addEventListener('click', () => {
 function checkResultLength() {
     resultValue = JSON.stringify(resultValue);
 
-    if (resultValue.length >= 8){
-        resultValue = JSON.parse(resultValue);
-        result.innerHTML = resultValue.toFixed(5);
+    if (resultValue.length > 8){
+        result.innerHTML = 'Long...'
+    } else if (resultValue.length == 8){
+        result.innerHTML = resultValue.toFixed(2)
     }
 }
 
