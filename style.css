@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.63), rgba(0, 0, 255, 0.719));
+    background-size: cover;
+    background-repeat: repeat;
+    min-width: 320px;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: black;
+    width: 21em;
+    height: 36em;
+    border-radius: 2em;
+}
+
+.display {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 4.2em;
+    background-color: black;
+    color: white;
+    height: 2.9em;
+    padding: 2em 0.4em 0 0;
+    box-sizing: border-box;
+    border-radius: 2em;
+}
+
+#botoes {
+    margin: 1em 0 0 1.4em;
+}
+
+button {
+    font-size: 2em;
+    width: 2em;
+    height: 2em;
+    border: none;
+    border-radius: 50%;
+    margin: 0.1em;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.cinza:hover {
+    background-color: rgba(165, 165, 165, 0.685)
+}
+
+.cinza-escuro:hover {
+    background-color: rgba(51, 51, 51, 0.61);
+}
+
+.laranja:hover {
+    background-color: rgba(255, 149, 0, 0.815);
+}
+
+.zero {
+    width: 4.35em;
+    border-radius: 2em;
+    text-align: left;
+    padding-left: 0.78em;
+}
+
+.cinza {
+    background-color: rgb(165, 165, 165);
+    color: rgb(3, 3, 3);
+}
+
+.cinza-escuro {
+    background-color: rgb(51, 51, 51);
+    color: rgb(215, 215, 215);
+}
+
+.laranja {
+    background-color: rgb(255, 148, 0);
+    color: rgb(215, 215, 215);
+}
