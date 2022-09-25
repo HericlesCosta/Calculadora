@@ -17,12 +17,12 @@ let commaValue = ''
 
 for (let i = 0; i < numbers.length; i++){
     numbers[i].addEventListener('click', (e) => {
-        let atr = e.target.getAttribute('value');
+        let attribute = e.target.getAttribute('value');
         if (isFirstValue === false){
-            getFirstValue(atr)
+            getFirstValue(attribute)
         }
         if (isSecondValue === false){
-            getSecondValue(atr)
+            getSecondValue(attribute)
         }
     })
 }
